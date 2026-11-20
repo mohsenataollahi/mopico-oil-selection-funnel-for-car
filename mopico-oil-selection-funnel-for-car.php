@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 define('MOPICO_OIL_FILE', __FILE__);
 define('MOPICO_OIL_DIR', plugin_dir_path(__FILE__));
 define('MOPICO_OIL_URL', plugin_dir_url(__FILE__));
-define('MOPICO_OIL_VERSION', '0.1.0');
+define('MOPICO_OIL_VERSION', '1.0.0');
 
 require_once MOPICO_OIL_DIR . 'includes/class-post-types.php';
 require_once MOPICO_OIL_DIR . 'includes/class-fluids.php';

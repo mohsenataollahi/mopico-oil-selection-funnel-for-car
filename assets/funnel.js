@@ -1,4 +1,6 @@
 (function () {
+  var FUNNEL_SCROLL_GAP = 35;
+
   function sameId(left, right) {
     return Number(left) === Number(right);
   }
@@ -101,6 +103,14 @@
       state.step = nextStep;
       message.textContent = "";
       paint();
+    }
+
+    function scrollToFunnel() {
+      var top =
+        root.getBoundingClientRect().top +
+        window.pageYOffset -
+        FUNNEL_SCROLL_GAP;
+      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     }
 
     function paintSteps() {
@@ -287,6 +297,7 @@
       back.addEventListener("click", function () {
         if (state.step > 0) {
           go(state.step - 1);
+          scrollToFunnel();
         }
       });
 
@@ -301,10 +312,11 @@
           return;
         }
         go(state.step + 1);
+        scrollToFunnel();
       });
 
-      nav.appendChild(next);
       nav.appendChild(back);
+      nav.appendChild(next);
     }
 
     function paint() {
