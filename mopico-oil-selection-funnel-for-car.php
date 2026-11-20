@@ -1,11 +1,12 @@
 <?php
 /**
  * Plugin Name: انتخاب روغن خودرو
- * Description: فانل انتخاب روغن. در پایان، محصولات خود سایت را نشان می‌دهد.
- * Version: 0.1.0
+ * Description:افزونه فانل انتخاب روغن خودرو برای فانل های مجموعه موپیکو 
+ * Version: 1.0.0
  * Requires at least: 6.4
  * Requires PHP: 7.4
- * Author: Mopico
+ * Author: Mohsen Ataollahi
+ * Author URI: https://github.com/mohsenataollahi/
  * Text Domain: mopico-oil-selection-funnel-for-car
  */
 
