@@ -1,0 +1,24 @@
+.mopico-oil-product-list {
+    max-height: 220px;
+    overflow: auto;
+    border: 1px solid #dcdcde;
+    padding: 8px 12px;
+    background: #fff;
+}
+
+.mopico-oil-product-list label {
+    display: block;
+    margin: 4px 0;
+}
+
+.mopico-oil-fluid {
+    margin: 12px 0;
+    padding: 8px 12px;
+    border: 1px solid #dcdcde;
+    background: #fff;
+}
+
+.mopico-oil-fluid summary {
+    cursor: pointer;
+    font-weight: 600;
+}
